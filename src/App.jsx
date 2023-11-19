@@ -47,8 +47,8 @@ function App() {
           path="/login"
           element={<Login token={token} handleToken={handleToken} />}
         />
-        <Route path="/comics" element={<Comics />} />
-        <Route path="/characters" element={<Characters />} />
+        <Route path="/comics" element={<Comics search={search} />} />
+        <Route path="/characters" element={<Characters search={search} />} />
       </Routes>
       <Footer />
     </Router>
